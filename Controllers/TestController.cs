@@ -45,5 +45,13 @@ namespace MVC_Project.Controllers
         {
             return new HttpStatusCodeResult(System.Net.HttpStatusCode.Unauthorized);
         }
+        public HttpStatusCodeResult UnauthorizedMethod()
+        {
+            return new HttpUnauthorizedResult("Sorry! You don't have access.");
+        }
+        public HttpNotFoundResult NotfoundMethod()
+        {
+            return HttpNotFound("Sorry!! You don't have access");
+        }
     }
 }
