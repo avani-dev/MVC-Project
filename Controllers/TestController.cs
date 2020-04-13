@@ -29,5 +29,11 @@ namespace MVC_Project.Controllers
         {
             return Content("<h3>Zain Ul Hassan</h3>", "text/html");
         }
+        public ContentResult ContentMethod11()
+        {
+            return Content(
+            "<script> alert('Hi! I am Zain Ul Hassan') </script>"
+                );
+        }
     }
 }
