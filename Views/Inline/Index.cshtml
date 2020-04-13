@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+@helper AddHelper(int a, int b)
+{
+    <label>Addition of Two Number = @(a + b)</label>
+}
+
+<div style="background-color:azure;">
+    <label> @AddHelper(100, 200)</label>
+</div> 
