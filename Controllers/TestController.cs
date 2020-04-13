@@ -29,11 +29,21 @@ namespace MVC_Project.Controllers
         {
             return Content("<h3>Zain Ul Hassan</h3>", "text/html");
         }
-        public ContentResult ContentMethod11()
+        public JsonResult Index1()
         {
-            return Content(
-            "<script> alert('Hi! I am Zain Ul Hassan') </script>"
-                );
+            return Json(new { Name = "Zain Ul Hassan", ID = 1 });
+        }
+        public RedirectResult RedirectMethod()
+        {
+            return Redirect("https://www.c-sharpcorner.com/members/zain-ul-hassan2");
+        }
+        //public RedirectToRouteResult RedirectToRouteMethod()
+        //{
+        //    return RedirectToRoute(new { controller = "Student", action = "Name" });
+        //}
+        public HttpStatusCodeResult HttpResultMethod()
+        {
+            return new HttpStatusCodeResult(System.Net.HttpStatusCode.Unauthorized);
         }
     }
 }
