@@ -21,10 +21,13 @@ namespace MVC_Project.Controllers
         {
             return View();
         }
-        public ContentResult Index1()
+        public ContentResult ContentMEthod()
         {
             return Content("<h3>Zain Ul Hassan </h3>");
         }
-
+        public ContentResult ContentMethod1()
+        {
+            return Content("<h3>Zain Ul Hassan</h3>", "text/html");
+        }
     }
 }
