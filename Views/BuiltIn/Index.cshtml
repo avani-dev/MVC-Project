@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@helper ListingItems(string[] items)
+{
+    <ol>
+        @foreach (string item in items)
+        {
+            <li>
+                @item
+            </li>
+        }
+    </ol>
+}
+<h3>Programming Language:</h3>
+@ListingItems(new string[] { "C", "C++", "C#", "JAVA" })
+<h3>
+    Book List:
+</h3>
+@ListingItems(new string[] { "How to C", "How to C++", "How to C#", "How to JAVA" })
+
+
+@Html.TextBox("textbox1", "Enter the Name")
