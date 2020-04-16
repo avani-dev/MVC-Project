@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container"></div>
+<h3>Student Registration Form:</h3>
+@*@using (Html.BeginGorm("Index", "Home", FormMethod.Post))*@
+ 
+<div>
+    <tr>
+        <td>
+            @Html.Label("User Name ")
+        </td>
+        <td>
+            @Html.TextBox("txtUserName", "Text Value", new { @class = "form-control" })
+        </td>
+    </tr>
+</div>
+
+
+ 

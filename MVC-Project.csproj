@@ -121,6 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BuiltInController.cs" />
+    <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HtmlExtentionController.cs" />
     <Compile Include="Controllers\InlineController.cs" />
@@ -173,6 +174,7 @@
     <Content Include="Views\BuiltIn\Index.cshtml" />
     <Content Include="Views\Html\Index.cshtml" />
     <Content Include="Views\HtmlExtention\Index.cshtml" />
+    <Content Include="Views\Employee\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
