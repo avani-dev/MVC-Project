@@ -24,5 +24,6 @@ namespace MVC_Project.Controllers
             ViewBag.Message = "Welcome to ASP.NET MVC!";
             return View();
         }
+
     }
 }
