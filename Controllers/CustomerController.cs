@@ -15,5 +15,14 @@ namespace MVC_Project.Controllers
             ViewBag.Message = "Welcome to ASP.NET MVC!!!";
             return View();
         }
+
+        [Route("Mvctest/{customerName?}")]
+       // [Route("Mvctest/{customerName=Avani}")]
+
+        public ActionResult OtherTest(string customerName)
+        {
+            ViewBag.Message = "Welcome to ASP.NET MVC!";
+            return View();
+        }
     }
 }

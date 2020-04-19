@@ -177,6 +177,7 @@
     <Content Include="Views\HtmlExtention\Index.cshtml" />
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Views\Customer\Cust.cshtml" />
+    <Content Include="Views\Customer\OtherTest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
