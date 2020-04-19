@@ -8,14 +8,78 @@
 @*@using (Html.BeginGorm("Index", "Home", FormMethod.Post))*@
  
 <div>
-    <tr>
-        <td>
-            @Html.Label("User Name ")
-        </td>
-        <td>
-            @Html.TextBox("txtUserName", "Text Value", new { @class = "form-control" })
-        </td>
-    </tr>
+    <table border="1" class="table table-bordered" style="background-color:antiquewhite;width:500px;">
+        <tr>
+            <td>
+                @Html.Label("User Name")
+            </td>
+            <td>
+                @Html.TextBox("txtUserName", "", new { @class = "form-control" })
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.Label("Password", "Password")
+            </td>
+            <td>
+                @Html.Password("Password", "", new { @class = "form-control" })
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Gender:
+            </td>
+            <td>
+                @Html.RadioButton("Gender", "Male", true, new { id = "male" })Male
+                @Html.RadioButton("Gender", "Female", true, new { id = "Female" })Female
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Addres:
+            </td>
+            <td>
+                @Html.TextArea("Address", "", new { @class = "form-contorl", id="IdAddress"})
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Hobbies:    
+            </td>
+            <td>
+                @Html.CheckBox("Cricket", true)Cricket
+                @Html.CheckBox("Drancing")Dancing
+                @Html.CheckBox("Drawing")Drawing
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Courses:
+                @{ 
+                    IEnumerable<string> strList = new List<string> { "BCA", "MCA", "BSC", "MSC" };
+                }
+            </td>
+            <td>
+                @Html.DropDownList("ddlCourse", new SelectList(strList, strList.FirstOrDefault()),"---Select Course---")
+            </td>
+        </tr>
+        <tr>
+            <td>Skills</td>
+            <td>
+                @Html.ListBox("Select Skills", new List<SelectListItem>{
+               new SelectListItem{Text="C#", Value="1" },
+               new SelectListItem{Text="C++", Value="2" },
+               new SelectListItem{Text="Java", Value="3" },
+               new SelectListItem{Text="Asp.net", Value="4" }
+           })
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" class="btn-primary" />
+            </td>
+        </tr>
+    </table>
 </div>
 
 
