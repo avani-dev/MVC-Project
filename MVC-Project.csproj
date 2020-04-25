@@ -127,6 +127,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HtmlExtentionController.cs" />
     <Compile Include="Controllers\InlineController.cs" />
+    <Compile Include="Controllers\Layout1Controller.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -181,6 +182,8 @@
     <Content Include="Views\Customer\Cust.cshtml" />
     <Content Include="Views\Customer\OtherTest.cshtml" />
     <Content Include="Views\Employee1\Index.cshtml" />
+    <Content Include="_MyLayoutPage.cshtml" />
+    <Content Include="Views\Layout1\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
